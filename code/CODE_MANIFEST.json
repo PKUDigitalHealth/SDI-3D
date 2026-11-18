@@ -1,0 +1,516 @@
+{
+  "files": [
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/01_core_model/dataset_sliding.py",
+      "role": "SDI-3D model development",
+      "status": "needs-config",
+      "sha256": "2524c16698cb5068d07a80c34d833799621bff7c990f4312501a0855eb7f07e3",
+      "bytes": 9892
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/01_core_model/model_transformer.py",
+      "role": "SDI-3D model development",
+      "status": "needs-config",
+      "sha256": "197cde0be4b60807f2b848e7203adfed2de970356a990787ba1c1a56a741d42f",
+      "bytes": 5850
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/01_core_model/net1d.py",
+      "role": "SDI-3D model development",
+      "status": "needs-config",
+      "sha256": "19daf2e3aee48ac87a3a63ac2b17ae02b9c425f908af566b8dec9ab3625c3faa",
+      "bytes": 17170
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/01_core_model/run_wenxin_sdi3d.py",
+      "role": "Real-world inference adapter",
+      "status": "needs-checkpoints",
+      "sha256": "737be5531dd2fc173fe2f978f424293658920c06d4aa2578691ccbd69b31990d",
+      "bytes": 26753
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/01_core_model/split_data.py",
+      "role": "SDI-3D model development",
+      "status": "needs-config",
+      "sha256": "afa9d8115f751bca852dcbdcfde4ee6db71a15eeda5caa9290ee24cf5b37bab0",
+      "bytes": 6511
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/01_core_model/test.py",
+      "role": "SDI-3D model development",
+      "status": "needs-config",
+      "sha256": "8aa62147e25b75faabbb6e49a57560014b5c5b951b30cbd9e677e56ce20ac803",
+      "bytes": 62205
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/01_core_model/train.py",
+      "role": "SDI-3D model development",
+      "status": "needs-fix",
+      "sha256": "6c7344e4bccd2eb3e7575d832e5a06b1c7faab48457dd2304708e7f95c8142a1",
+      "bytes": 10751
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/augment_tos_tci_sri.py",
+      "role": "Feature-table augmentation",
+      "status": "utility",
+      "sha256": "9b2be49ef619148e3d68aa201a6177f6b9a67940905d016aca6039c36b1e5a5d",
+      "bytes": 3242
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/configs/shhs_cvd.example.yaml",
+      "role": "Trajectory configuration example",
+      "status": "config",
+      "sha256": "abb03843a615294ee696781886b986046ec2a8a205ada41f59751dd8bfa0a7b3",
+      "bytes": 3517
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/extract_body_brain_dual_features.py",
+      "role": "Current handcrafted trajectory features",
+      "status": "primary",
+      "sha256": "2ab361ca05c8b1fedafffac2ebe9663685334e726c08c7bc49fb8954c83e8b91",
+      "bytes": 16677
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/02_trajectory_features/legacy/compare.py",
+      "role": "Original feature extraction/case display",
+      "status": "legacy",
+      "sha256": "cb3123d676c32ec3113bd8554f810d32bc413f011975aef0b9bf06fdf67462e6",
+      "bytes": 5673
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/02_trajectory_features/legacy/feature.py",
+      "role": "Original feature extraction/case display",
+      "status": "legacy",
+      "sha256": "f5810dd82d8689495f6481a556bb928b419900787a49918c099b98ac889c0609",
+      "bytes": 26021
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/sleep_autoencoder_8d.py",
+      "role": "Eight-dimensional learned embedding",
+      "status": "primary",
+      "sha256": "aefa6a6f0c7fc4b386b4106561c334f75208609ca52232f80f10a5fa05040946",
+      "bytes": 19052
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/tests/smoke_test.py",
+      "role": "Pipeline smoke test",
+      "status": "test",
+      "sha256": "26a8ec825fff4cb8f145fc24c843a0d0dbced0be032600fe6b2b536ceffa0a4c",
+      "bytes": 4915
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/tests/smoke_test_three_cohort_8d.py",
+      "role": "Pipeline smoke test",
+      "status": "test",
+      "sha256": "5071fec2f5dee897eeab96313f5bc54ed539b886fe5e01e9381be7a3cd893746",
+      "bytes": 2673
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/trajectory_ml/__init__.py",
+      "role": "Trajectory learning package",
+      "status": "primary",
+      "sha256": "d52064ddb53591e5014f763051a5a2adbfddd170e1d09b1381b2340918f41e4b",
+      "bytes": 92
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/trajectory_ml/cli.py",
+      "role": "Trajectory learning package",
+      "status": "primary",
+      "sha256": "83a4337e945c2634d043c2bc690e0d20ddc0c989a9a5cc30736a045e84fb03be",
+      "bytes": 848
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/trajectory_ml/config.py",
+      "role": "Trajectory learning package",
+      "status": "primary",
+      "sha256": "d895de34abf685039bcdee333912a15742dd6d8d2a8b56b297c7b907eb304dca",
+      "bytes": 1305
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/trajectory_ml/data.py",
+      "role": "Trajectory learning package",
+      "status": "primary",
+      "sha256": "69e23d60a8c18777f91bde5eba8d164105d4fb652878736599ee27f5ebefd45a",
+      "bytes": 15326
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/trajectory_ml/encoder.py",
+      "role": "Trajectory learning package",
+      "status": "primary",
+      "sha256": "03b72e33304357975ec90631dd504a091b92e90724c68f46e55ab35beb6799fe",
+      "bytes": 10552
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/trajectory_ml/evaluation.py",
+      "role": "Trajectory learning package",
+      "status": "primary",
+      "sha256": "d4cd3af3532035ba673c904f68b9ff5cdfa38802beac6f6df3c6208e3d63e4b6",
+      "bytes": 9746
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/trajectory_ml/features.py",
+      "role": "Trajectory learning package",
+      "status": "primary",
+      "sha256": "ec53925699a5c923075215cbd312dd420d53c8208b99993a0aa1b1a855db8c4c",
+      "bytes": 12413
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/02_trajectory_features/trajectory_ml/pipeline.py",
+      "role": "Trajectory learning package",
+      "status": "primary",
+      "sha256": "f3c887bbae819bf04c8d3a42b58865932dad791fc25ac8c64c288c9a052ac9b2",
+      "bytes": 15570
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/03_coordinate_validation/analyze_dual_axis_pca.py",
+      "role": "Coordinate validity/complementarity",
+      "status": "primary",
+      "sha256": "4e8f38953849ea5175bbf4f6e9731084e64df0f08b647f09d4f10fbbb3e459ae",
+      "bytes": 4446
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/03_coordinate_validation/analyze_patient_psg.py",
+      "role": "Coordinate validity/complementarity",
+      "status": "utility",
+      "sha256": "7d2794659e53822efc97730886efab1ef29cb3f66f4eda79ad472b4a424b5d25",
+      "bytes": 15875
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/03_coordinate_validation/batch_analyze_psg_axes.py",
+      "role": "Coordinate validity/complementarity",
+      "status": "primary",
+      "sha256": "e5f91bc4d3a3f88f237f72c370417e4dc5e4eb233163e8c37fdfbfe977874e72",
+      "bytes": 52348
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/03_coordinate_validation/pca_dual_axis_stage_summary.py",
+      "role": "Coordinate validity/complementarity",
+      "status": "primary",
+      "sha256": "039721f06b5a000378ac1c8405afd21cb47971625e678a3b631e207346763737",
+      "bytes": 5058
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/03_coordinate_validation/plot_sleep_stage_distributions.py",
+      "role": "Coordinate validity/complementarity",
+      "status": "primary",
+      "sha256": "c962733238b5e2cd272b7bc70346f71e24a4a90f6e19a32e957ca756cde2317d",
+      "bytes": 37455
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/04_prediction_and_shap/analysis_specification.json",
+      "role": "Prespecified AUC comparison settings",
+      "status": "specification",
+      "sha256": "60c3b15fd3e815f1101a41163e0a56bb491eda78665df75195e659591aa16d21",
+      "bytes": 1777
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/04_prediction_and_shap/audit_feature14_labels.py",
+      "role": "Feature-set comparison/input audit",
+      "status": "audit",
+      "sha256": "c3e2a195b56ad6df720ac74aabd24b7044020eddabb54218ff8693a23b07563d",
+      "bytes": 4806
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/04_prediction_and_shap/compare_sdi_feature_sets.py",
+      "role": "Feature-set comparison/input audit",
+      "status": "primary",
+      "sha256": "4f7d77ace1560a0371134e3aea916c9bc8aa1c97f6a009e726b806d4b6731ceb",
+      "bytes": 27502
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/04_prediction_and_shap/inspect_feature14_inputs.py",
+      "role": "Feature-set comparison/input audit",
+      "status": "audit",
+      "sha256": "19077bbb863a00859011bd532e5eb6ea0331202c8e09f306b48d417ce95f774c",
+      "bytes": 682
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/04_prediction_and_shap/legacy/shhs_xgboost_classification_manuscript_labels.py",
+      "role": "Earlier 9+5 feature SHAP analysis",
+      "status": "legacy",
+      "sha256": "041b904b9973f7180453e302fccee31c6fc388605d6267e1a2e4a4886cfff776",
+      "bytes": 64792
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/04_prediction_and_shap/legacy/shhs_xgboost_classification_original_settings.py",
+      "role": "Earlier 9+5 feature SHAP analysis",
+      "status": "legacy",
+      "sha256": "be28c6f39595504dd4782c2099948b496dce7121252190e318d1e9ba2be8b691",
+      "bytes": 64735
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/04_prediction_and_shap/shhs_xgboost_14_features.py",
+      "role": "Current 14-feature SHAP analysis",
+      "status": "primary-shap",
+      "sha256": "3e8e0aa71fd6de1384553526749f7f6dd8ced9c7ea19c310012ba0b64a2f0942",
+      "bytes": 32006
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/analyze_sdi_cluster_outcomes.py",
+      "role": "Current 16-feature phenotype/survival chain",
+      "status": "primary",
+      "sha256": "cc7502eeec58415024a1faf48ffd8abdafc7a35844937241f5926076f6c765ac",
+      "bytes": 24765
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/cluster_three_cohorts_sdi8_embedding8.py",
+      "role": "Current 16-feature phenotype/survival chain",
+      "status": "primary",
+      "sha256": "89ad3aa03d8e976c051250055b2adbf273b4c3230d3e6efed48759cac67f722a",
+      "bytes": 9785
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/legacy/build_internal_consensus_gmm.py",
+      "role": "Alternative or historical clustering/survival",
+      "status": "legacy",
+      "sha256": "a911a74d8eb212641a9f1131ad6734a809fa501f774691512ca0e05762a075e8",
+      "bytes": 12366
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/legacy/cluster_sdi_8features.py",
+      "role": "Alternative or historical clustering/survival",
+      "status": "legacy",
+      "sha256": "d0c3f6f3180fa297d13756369d50ff693e7a0e8d49ecb2ead157dae12fa9f991",
+      "bytes": 16041
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/05_phenotype_survival/legacy/desktop_cfs_clustering_analysis.py",
+      "role": "Original cohort-specific analysis",
+      "status": "legacy-original",
+      "sha256": "8f2b0ce24008fdd10a732e8323a63e644e1708f02e6847c11115c92b2a50ee5a",
+      "bytes": 26236
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/05_phenotype_survival/legacy/desktop_combined_clustering_forest_plot.py",
+      "role": "Original cohort-specific analysis",
+      "status": "legacy-original",
+      "sha256": "0d57b33659f5ee0c8265880c3918123b3329ac5f391bdc4e2a13de0a776a6c9a",
+      "bytes": 6559
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/05_phenotype_survival/legacy/desktop_mros_clustering_analysis.py",
+      "role": "Original cohort-specific analysis",
+      "status": "legacy-original",
+      "sha256": "cbe7ea8dd40302ceba42cafdf8ac7987e4de243d74255618fd896a7fe37e808a",
+      "bytes": 27130
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/05_phenotype_survival/legacy/desktop_shhs_clustering_analysis.py",
+      "role": "Original cohort-specific analysis",
+      "status": "legacy-original",
+      "sha256": "ece7173593629fbece4ff14fcc3ca01d16715e97ff03c1104e8a0f566c9a7d30",
+      "bytes": 14355
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/05_phenotype_survival/legacy/desktop_shhs_survival_analysis.py",
+      "role": "Original cohort-specific analysis",
+      "status": "legacy-original",
+      "sha256": "9faadbed8d7ce86a2dfb9b9def22b6476523e39bd82f681113f5ce46e8521661",
+      "bytes": 29963
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/legacy/plot_shhs_survival_full_layer.py",
+      "role": "Alternative or historical clustering/survival",
+      "status": "legacy",
+      "sha256": "b9d708765f2a195228ee06116820141c1a89b57ac6defae1ba31c59275a6dffa",
+      "bytes": 32460
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/legacy/recluster_shhs_8feature_gmm.py",
+      "role": "Alternative or historical clustering/survival",
+      "status": "legacy",
+      "sha256": "eec990b65850e4c78149a2e2fbef5900e4e69a5e4e94405e50411b956710c665",
+      "bytes": 4953
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/legacy/recluster_shhs_sdi8_embedding8_gmm.py",
+      "role": "Alternative or historical clustering/survival",
+      "status": "legacy",
+      "sha256": "7608acadd7fce06ca42638ec93938feb7ea6fea52c98db3aebab915da83e22c8",
+      "bytes": 8893
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/legacy/shhs_clustering_analysis.py",
+      "role": "Alternative or historical clustering/survival",
+      "status": "legacy",
+      "sha256": "a0d9425d04be44873fb05c16a5fb29486a7862ebace514dccdc2e668797d71a3",
+      "bytes": 19437
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/plot_combined_three_cohort_forest.py",
+      "role": "Current 16-feature phenotype/survival chain",
+      "status": "primary",
+      "sha256": "50492a4f6ed020491e118cc0aab8416cb044886de5610e250541207d6edec080",
+      "bytes": 7460
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/05_phenotype_survival/shhs_frozen_cluster_survival_analysis.py",
+      "role": "Current 16-feature phenotype/survival chain",
+      "status": "primary",
+      "sha256": "da8056313a3046782e2b47fc1c8acc24bad05c4a6f631123c98c91097fb525e2",
+      "bytes": 15721
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/06_cpap/analyze_pre_post_features.py",
+      "role": "BZ-CPAP paired analysis/plot",
+      "status": "primary",
+      "sha256": "7d0adfba4fcd9fb85555427102980fba0549917157494c9f8df36fa9fbb748ff",
+      "bytes": 9207
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/06_cpap/plot_pre_post_boxplots.py",
+      "role": "BZ-CPAP paired analysis/plot",
+      "status": "legacy",
+      "sha256": "a8f1faec343d658d9b0e3566b47b0c0d0e1a2cdad9c557a0be4a78edc1ae4e8d",
+      "bytes": 4556
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/06_cpap/plot_publication_pre_post_boxplots.py",
+      "role": "BZ-CPAP paired analysis/plot",
+      "status": "primary",
+      "sha256": "0f87f8a0bb3d40d58303bed66b061a089957588132ed4b2a11b54f6e4c0f0e85",
+      "bytes": 7222
+    },
+    {
+      "source_group": "original ECG-3D code",
+      "path": "code/07_case_figures/legacy_show_3D.py",
+      "role": "Case/application visualization",
+      "status": "legacy-original",
+      "sha256": "89d5ed1db6253b1c5a12efbf9d3c9eea3ebe872419de3f11c0a5ca6260ca4e3b",
+      "bytes": 10244
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/07_case_figures/plot_four_case_figures.py",
+      "role": "Case/application visualization",
+      "status": "primary",
+      "sha256": "6c4b7ae4ac690343590ba5c38704556dac61dbb96e9b6dde3d2c8695f868b857",
+      "bytes": 6562
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/07_case_figures/plot_real_world_sdi3d_application.py",
+      "role": "Case/application visualization",
+      "status": "exploratory",
+      "sha256": "03d7f8a4e143f19a94f302249cad3467cf7afc56a7538a501ad4e50ed51d1d73",
+      "bytes": 15705
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/07_case_figures/plot_real_world_wearable_case.py",
+      "role": "Case/application visualization",
+      "status": "exploratory",
+      "sha256": "64f0f971afd300b7f46a804c47422fa4252e3075dc80784a5d7cb37c93e7e47f",
+      "bytes": 16694
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/07_case_figures/plot_sdi3d_space_transparent.py",
+      "role": "Case/application visualization",
+      "status": "utility",
+      "sha256": "2afd998ea6861da5e289c9fe9e06d6acbb918685b9b8f7943bd284414cb3699f",
+      "bytes": 7181
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/07_case_figures/redraw_four_white.py",
+      "role": "Case/application visualization",
+      "status": "utility",
+      "sha256": "904641658cc341f8ce5945f9c7062ed0918e19b05b3d71f44e5d66c6877024b6",
+      "bytes": 1239
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/07_case_figures/show_3D_white.py",
+      "role": "Case/application visualization",
+      "status": "primary",
+      "sha256": "7ebd8af1c230edc985337919433358abef25c44444f023ac6396ae1886ec37d8",
+      "bytes": 17301
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/08_optional_and_utilities/quadrant_insomnia_analysis.py",
+      "role": "Quadrant insomnia analysis",
+      "status": "optional",
+      "sha256": "99e32e78365cfe01cb7aa653cbdbae1d50357cb002846e3151115c0d1d4c76e1",
+      "bytes": 16134
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/08_optional_and_utilities/quadrant_risk_analysis.py",
+      "role": "Quadrant risk analysis",
+      "status": "optional",
+      "sha256": "358d6c3c2688c5f99f0ed90361010d9c689f608378d210dcfe9eb29f2eafb899",
+      "bytes": 29952
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/08_optional_and_utilities/update_embedded_figure_labels.py",
+      "role": "Vector figure terminology update",
+      "status": "utility",
+      "sha256": "c7e4d1e283bdce949c4869c721a8f884da5460813596bec95accbf8ea40fdba3",
+      "bytes": 4419
+    },
+    {
+      "source_group": "manuscript analysis workspace",
+      "path": "code/08_optional_and_utilities/update_model_brain_labels.py",
+      "role": "Model diagram terminology update",
+      "status": "utility",
+      "sha256": "f38bccd190121c727243c386428c42fe09e6da7d8652d34fef0c6b3beb2ae0a3",
+      "bytes": 3186
+    }
+  ]
+}

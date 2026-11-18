@@ -1,0 +1,119 @@
+paths:
+  trajectory_dir: /data/shhs/trajectory_csv
+  harmonized_file: /data/shhs/harmonized.csv
+  outcomes_file: /data/shhs/cvd_followup.csv
+  output_dir: /results/shhs_trajectory_cvd
+
+data:
+  file_pattern: "shhs*_features_predictions.csv"
+  recursive: false
+  id_col: nsrrid
+  visit_col: visit
+  # Used when SHHS files do not contain ID/visit columns. Named groups are
+  # required. In shhs1-200001..., visit=1 and subject_id=200001.
+  filename_regex: "^shhs(?P<visit>\\d+)-(?P<subject_id>\\d+)_features_predictions\\.csv$"
+  time_col: window_center
+  depth_col: wake_depth_score
+  rem_col: rem_logit_rem
+  stage_col: label
+  epoch_seconds: 30
+  minimum_epochs: 120
+  # Set to 1 for SHHS visit 1 if only the baseline PSG is used.
+  required_visit: 1
+
+metadata:
+  harmonized_id_col: nsrrid
+  outcomes_id_col: nsrrid
+  # Set these when the harmonized file contains multiple visits.
+  harmonized_visit_col: visitnumber
+  harmonized_visit_value: 1
+  # The supplied SHHS files contain legacy non-UTF8 text in some headers.
+  harmonized_encoding: latin1
+  outcomes_encoding: latin1
+  # Replace these examples with the exact columns in your harmonized file.
+  continuous_covariates:
+    - age
+    - bmi
+  categorical_covariates:
+    - sex
+    - race
+  # Optional columns copied to the audit table but not entered into models.
+  audit_columns: []
+
+outcome:
+  # event_col must be coded 0/1 after applying event_positive_values.
+  event_col: incident_cvd
+  event_positive_values: [1]
+  # For a fixed-horizon analysis, controls must have follow-up through the
+  # horizon. Subjects censored earlier are excluded.
+  followup_time_col: followup_years
+  # Alternatively, provide event_time_cols plus censor_time_col. The first
+  # nonmissing component-event time will define the composite event time.
+  event_time_cols: []
+  censor_time_col: null
+  time_scale_to_years: 1.0
+  horizon_years: 5
+  # Optional baseline prevalent-disease exclusion.
+  prevalent_col: prevalent_cvd
+  prevalent_positive_values: [1]
+  # For count-valued SHHS history fields, use prevalent_cols instead.
+  prevalent_cols: []
+  prevalent_greater_than: 0
+  require_prevalent_data: false
+
+scaling:
+  # Recommended: fit 1st/99th percentiles in each outer-training fold.
+  # Alternative: per_record_minmax, matching the original descriptive work.
+  mode: train_quantile
+  lower_quantile: 0.01
+  upper_quantile: 0.99
+  # sigmoid is natural for rem_logit_rem. Use quantile_minmax if the REM
+  # column is not actually a logit.
+  rem_transform: sigmoid
+
+handcrafted:
+  quadrant_threshold: 0.5
+  temporal_segments: 3
+  direction_bins: 12
+  autocorrelation_lags: [10, 30, 60]
+
+encoder:
+  enabled: true
+  architecture: transformer
+  patch_size_epochs: 10
+  embedding_dim: 32
+  hidden_dim: 64
+  num_layers: 2
+  num_heads: 4
+  dropout: 0.10
+  mask_ratio: 0.25
+  batch_size: 32
+  epochs: 60
+  patience: 8
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  validation_fraction: 0.15
+
+validation:
+  outer_splits: 5
+  inner_splits: 3
+  tuning_iterations: 12
+  bootstrap_iterations: 2000
+  random_seed: 2026
+  n_jobs: 8
+
+xgboost:
+  n_estimators: [200, 400, 700]
+  max_depth: [2, 3, 4]
+  learning_rate: [0.02, 0.05, 0.1]
+  min_child_weight: [1, 3, 5]
+  subsample: [0.7, 0.9, 1.0]
+  colsample_bytree: [0.7, 0.9, 1.0]
+  reg_lambda: [1.0, 5.0, 10.0]
+
+gmm:
+  enabled: true
+  minimum_components: 2
+  maximum_components: 6
+  covariance_type: full
+  repetitions: 20

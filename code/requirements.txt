@@ -1,0 +1,15 @@
+numpy
+pandas
+scipy
+scikit-learn
+statsmodels
+lifelines
+xgboost
+shap
+matplotlib
+seaborn
+torch
+tqdm
+PyYAML
+xmltodict
+pyedflib
