@@ -1,0 +1,93 @@
+{
+  "seed": 2026,
+  "bootstrap_replicates": 2000,
+  "classifier": {
+    "type": "XGBClassifier",
+    "n_estimators": 300,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "min_child_weight": 3,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 5.0,
+    "class_weighting": "outer-training negative/positive ratio"
+  },
+  "within_cohort_validation": "5-fold stratified OOF; identical folds across feature sets",
+  "external_validation": "fit on pooled CFS+MrOS and test once in SHHS",
+  "feature_sets": {
+    "SDI-6": [
+      "AP",
+      "RB",
+      "MDR",
+      "PR",
+      "CV",
+      "SK"
+    ],
+    "SDI-3D handcrafted-8": [
+      "SSTR",
+      "CWSD",
+      "TDTL",
+      "BRAI",
+      "STDE",
+      "TOS",
+      "TCI",
+      "SRI"
+    ],
+    "SDI-3D embedding-8": [
+      "feature_1",
+      "feature_2",
+      "feature_3",
+      "feature_4",
+      "feature_5",
+      "feature_6",
+      "feature_7",
+      "feature_8"
+    ],
+    "SDI-3D fused-16": [
+      "SSTR",
+      "CWSD",
+      "TDTL",
+      "BRAI",
+      "STDE",
+      "TOS",
+      "TCI",
+      "SRI",
+      "feature_1",
+      "feature_2",
+      "feature_3",
+      "feature_4",
+      "feature_5",
+      "feature_6",
+      "feature_7",
+      "feature_8"
+    ],
+    "SDI-6 + SDI-3D-16": [
+      "AP",
+      "RB",
+      "MDR",
+      "PR",
+      "CV",
+      "SK",
+      "SSTR",
+      "CWSD",
+      "TDTL",
+      "BRAI",
+      "STDE",
+      "TOS",
+      "TCI",
+      "SRI",
+      "feature_1",
+      "feature_2",
+      "feature_3",
+      "feature_4",
+      "feature_5",
+      "feature_6",
+      "feature_7",
+      "feature_8"
+    ]
+  },
+  "fdr_scope": {
+    "within_cohort": 56,
+    "external_shhs": 16
+  }
+}
